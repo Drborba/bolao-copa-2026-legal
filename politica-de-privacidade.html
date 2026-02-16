@@ -4,561 +4,266 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Política de Privacidade - Bolão Copa 2026</title>
-<meta name="description" content="Política de Privacidade do aplicativo Bolão Copa 2026 em conformidade com a LGPD.">
+
 <style>
-body {
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-    background: #f4f6f9;
-    margin: 0;
-}
-.container {
-    max-width: 900px;
-    margin: 40px auto;
-    background: #fff;
-    padding: 50px;
-    border-radius: 12px;
-    box-shadow: 0 15px 40px rgba(0,0,0,0.08);
-}
-h1 { margin-top: 0; }
-h2 { margin-top: 40px; }
-h3 { margin-top: 24px; }
-p { margin: 12px 0; line-height: 1.7; }
-ul { margin-left: 20px; line-height: 1.7; }
-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin: 20px 0;
-}
-th, td {
-    border: 1px solid #ddd;
-    padding: 10px;
-    text-align: left;
-}
-th {
-    background: #f1f1f1;
-}
-footer {
-    margin-top: 50px;
-    font-size: 0.9em;
-    color: #555;
-}
-@media (max-width: 768px) {
-    .container { padding: 25px; }
-}
+    body{
+        font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;
+        background:#0f1115;
+        color:#e6e6e6;
+        line-height:1.75;
+        margin:0;
+        padding:40px;
+        max-width:950px;
+        margin-left:auto;
+        margin-right:auto;
+    }
+
+    h1{
+        font-size:32px;
+        color:#ffffff;
+        margin-bottom:10px;
+    }
+
+    h2{
+        margin-top:45px;
+        border-bottom:1px solid #2a2d34;
+        padding-bottom:8px;
+        color:#ffffff;
+    }
+
+    h3{
+        margin-top:30px;
+        color:#ffffff;
+    }
+
+    p{ margin:14px 0; }
+
+    ul{ margin-left:20px; margin-top:8px; }
+
+    li{ margin-bottom:6px; }
+
+    strong{ color:#ffffff; }
+
+    .meta{
+        color:#b5b5b5;
+        margin-bottom:30px;
+    }
+
+    .alerta{
+        background:#1a1d24;
+        border-left:4px solid #ff4d4d;
+        padding:15px;
+        margin:20px 0;
+        font-size:14px;
+    }
+
+    table{
+        width:100%;
+        border-collapse:collapse;
+        margin-top:15px;
+    }
+
+    table, th, td{
+        border:1px solid #2a2d34;
+    }
+
+    th, td{
+        padding:10px;
+        text-align:left;
+    }
+
+    th{
+        background:#1a1d24;
+        color:#ffffff;
+    }
+
 </style>
 </head>
+
 <body>
-<div class="container">
 
 <h1>POLÍTICA DE PRIVACIDADE</h1>
-<p><strong>Bolão Copa 2026</strong></p>
-<p><strong>Data de Vigência:</strong> [Data de publicação]</p>
-<p><strong>Última Atualização:</strong> [Data]</p>
-  
-<p>1. INTRODUÇÃO E COMPROMISSO COM A PRIVACIDADE
-A presente Política de Privacidade descreve como [Nome da Empresa/Desenvolvedor] ("nós", "nosso" ou "Aplicativo") coleta, usa, armazena e protege os dados pessoais dos usuários ("você", "seu") do aplicativo Bolão Copa 2026.
-Nosso compromisso é garantir transparência, segurança e respeito aos seus direitos, em conformidade com:</p>
 
-<p>Lei Geral de Proteção de Dados (LGPD – Lei nº 13.709/2018);
-Marco Civil da Internet (Lei nº 12.965/2014);
-Melhores práticas internacionais de privacidade.</p>
+<p class="meta">
+Data de Vigência: [Data de publicação]<br>
+Última Atualização: [Data]
+</p>
+
+<h2>1. INTRODUÇÃO E COMPROMISSO COM A PRIVACIDADE</h2>
+<p>A presente Política de Privacidade descreve como [Nome da Empresa/Desenvolvedor] ("nós", "nosso" ou "Aplicativo") coleta, usa, armazena e protege os dados pessoais dos usuários ("você", "seu") do aplicativo Bolão Copa 2026.</p>
+
+<p>Nosso compromisso é garantir transparência, segurança e respeito aos seus direitos, em conformidade com:</p>
+
+<ul>
+<li>Lei Geral de Proteção de Dados (LGPD – Lei nº 13.709/2018);</li>
+<li>Marco Civil da Internet (Lei nº 12.965/2014);</li>
+<li>Melhores práticas internacionais de privacidade.</li>
+</ul>
 
 <p>Ao usar o Aplicativo, você consente com a coleta e uso de dados conforme descrito nesta Política.</p>
 
-2. DADOS COLETADOS
-2.1 Dados Fornecidos Diretamente pelo Usuário
-2.1.1 Cadastro Tradicional (Email e Senha)
-Durante o registro manual, coletamos:
-
-<p>Email: Para autenticação, recuperação de senha e comunicações essenciais;
-Senha: Armazenada de forma criptografada (hash bcrypt/argon2) – nunca em texto simples;
-Nickname/Username: Nome de exibição nos rankings e bolões (obrigatório);
-Nome Completo: Opcional, para personalização do perfil.</p>
-
-<p>2.1.2 Login Social (Google/Facebook)
-Ao optar por autenticação via redes sociais, coletamos apenas os dados autorizados por você:</p>
-
-<p>Google: Email, nome, foto de perfil do Google;
-Facebook: Email, nome, foto de perfil do Facebook.</p>
-
-Nota Importante: Não acessamos suas mensagens, contatos, posts ou outras informações privadas das redes sociais. A coleta é limitada ao escopo de autenticação OAuth 2.0.
-2.1.3 Dados de Perfil
-Você pode fornecer voluntariamente:
-
-Foto de Perfil (Avatar): Imagem enviada para personalização, armazenada em nosso servidor (Supabase Storage);
-Preferências de Notificação: Configurações sobre quais alertas deseja receber.
-
-2.1.4 Dados de Uso do Aplicativo
-Durante a utilização do Serviço, coletamos:
-
-Palpites de Jogos: Placares previstos para partidas de futebol;
-Bolões Criados/Participados: Nomes dos bolões, códigos de convite, posição no ranking;
-Estatísticas de Desempenho: Pontuação total, cravadas (placares exatos), acertos de vencedor;
-Palpites de Ouro: Marcações de palpites multiplicadores (2x pontos);
-Interações Sociais: Convites enviados, participantes adicionados/removidos.
-
-2.2 Dados Coletados Automaticamente
-2.2.1 Dados Técnicos e de Dispositivo
-
-Identificador de Dispositivo: ID único gerado pelo sistema operacional (usado para push notifications);
-Modelo e Versão do Dispositivo: Ex: iPhone 13, Android 12 (para compatibilidade e suporte);
-Sistema Operacional: iOS ou Android (versão);
-Versão do Aplicativo: Para análise de crashes e atualizações;
-Endereço IP: Coletado temporariamente para segurança e prevenção de fraudes;
-Estado de Conexão de Rede: Se está conectado via WiFi ou dados móveis (para otimizar sincronização).
-
-2.2.2 Tokens de Autenticação e Sessão
-
-JWT (JSON Web Token): Token de acesso com validade de 1 hora, renovado automaticamente;
-Refresh Token: Válido por 30 dias, para renovação de sessão;
-Push Notification Token: Identificador único do Expo Notifications para envio de alertas.
-
-2.2.3 Logs de Erro e Desempenho
-Coletamos automaticamente:
-
-Logs de Erro (Crash Reports): Informações sobre falhas do Aplicativo (stack traces, linha de código com erro);
-Logs de Depuração: Registros de ações do usuário para diagnóstico de problemas (ex: "Usuário tentou fazer palpite após deadline").
-
-⚠️ ATENÇÃO – POSSÍVEL VIOLAÇÃO DE PRIVACIDADE:
-Os logs de depuração podem conter dados sensíveis como email, IDs de usuário ou mensagens de erro detalhadas. É CRÍTICO implementar sanitização de logs antes do envio para produção. Recomenda-se:
-
-Remover dados pessoais dos logs (emails, nomes, IDs visíveis);
-Usar IDs anonimizados para rastreamento de erros;
-Implementar ferramenta de crash reporting (Sentry, Crashlytics) com filtragem de PII (Personally Identifiable Information).
-
-2.2.4 Dados de Localização (LIMITADO)
-O Aplicativo NÃO coleta localização geográfica precisa via GPS.
-Podemos inferir localização aproximada através de:
-
-Endereço IP (nível de cidade/região);
-Configuração de idioma/fuso horário do dispositivo.
-
-Finalidade: Exibir horários de jogos no fuso local, recomendar campeonatos regionais (futuro).
-2.3 Dados de Terceiros (Integrações)
-2.3.1 Dados de Partidas de Futebol
-Obtemos informações de jogos (times, placares, horários) de APIs públicas ou licenciadas (ex: API-Football). Esses dados são públicos e não identificam usuários.
-2.3.2 Publicidade (AdMob – Futuro)
-Quando implementado, o Google AdMob poderá coletar:
-
-ID de Publicidade (GAID/IDFA): Identificador usado para anúncios personalizados;
-Impressões e Cliques: Métricas de interação com anúncios;
-Dados de Navegação: Páginas visualizadas no Aplicativo (anonimizados).
-
-Você pode desabilitar anúncios personalizados nas configurações do seu dispositivo (iOS: "Rastreamento Limitado de Anúncios" / Android: "Desativar Personalização de Anúncios").
-
-3. FINALIDADE DO TRATAMENTO DE DADOS
-Utilizamos seus dados pessoais para as seguintes finalidades, com base legal na LGPD:
-Dado ColetadoFinalidadeBase Legal (LGPD)EmailAutenticação, recuperação de senha, notificações essenciaisExecução de contrato (Art. 7º, V)Senha (hash)Segurança de acesso à contaExecução de contratoNickname/AvatarIdentificação visual nos rankings e bolõesExecução de contratoPalpites e EstatísticasOperação do sistema de pontuação, rankings e gamificaçãoExecução de contratoPush Notification TokenEnvio de alertas (lembretes de palpite, resultados de jogos)Consentimento (Art. 7º, I)Logs de ErroCorreção de bugs, melhoria de estabilidadeLegítimo interesse (Art. 7º, IX)IP e Dados de DispositivoSegurança, prevenção de fraudes, compatibilidade técnicaLegítimo interesseDados de Login Social (OAuth)Autenticação facilitada via Google/FacebookConsentimentoAdMob ID (futuro)Exibição de anúncios para manutenção gratuita do AplicativoLegítimo interesse
-3.1 Uso Secundário de Dados (Análises Agregadas)
-Podemos usar dados anonimizados e agregados (sem identificação individual) para:
-
-Estatísticas de uso do Aplicativo (ex: "70% dos usuários fazem palpites 1 dia antes do jogo");
-Análise de popularidade de campeonatos;
-Melhoria de funcionalidades e UX.
-
-Esses dados não permitem reidentificação e não são considerados "dados pessoais" pela LGPD.
-
-4. COMPARTILHAMENTO DE DADOS COM TERCEIROS
-4.1 Prestadores de Serviço (Subprocessadores)
-Compartilhamos dados com os seguintes terceiros exclusivamente para operação do Aplicativo:
-4.1.1 Supabase (Infraestrutura de Backend)
-
-Dados Compartilhados: Todos os dados de usuário (email, senha hash, perfil, palpites, bolões);
-Finalidade: Hospedagem de banco de dados, autenticação, armazenamento de arquivos (avatares);
-Localização dos Servidores: Estados Unidos/Europa (Supabase usa AWS);
-Segurança: Criptografia em trânsito (TLS 1.3) e em repouso (AES-256);
-Política de Privacidade: https://supabase.com/privacy
-
-⚠️ ATENÇÃO – TRANSFERÊNCIA INTERNACIONAL DE DADOS:
-Como o Supabase hospeda dados fora do Brasil, há transferência internacional. A LGPD exige que esta transferência seja feita para países com nível adequado de proteção (Art. 33) ou mediante cláusulas contratuais padrão. Verifique se o Supabase é certificado (ex: Privacy Shield successor) ou se há Contrato de Controlador-Processador assinado.
-4.1.2 Expo (Notificações Push)
-
-Dados Compartilhados: Push notification token (ID único do dispositivo);
-Finalidade: Envio de notificações push (lembretes, resultados);
-Política de Privacidade: https://expo.dev/privacy
-
-4.1.3 Google (OAuth e AdMob – Futuro)
-
-OAuth (Login com Google):
-
-Dados Compartilhados: Email, nome, foto de perfil (com seu consentimento);
-Finalidade: Autenticação facilitada;
-Política: https://policies.google.com/privacy
-
-
-AdMob (Publicidade):
-
-Dados Compartilhados: ID de publicidade, impressões de anúncios;
-Finalidade: Exibição de anúncios e geração de receita;
-Controle: Você pode desativar anúncios personalizados nas configurações do dispositivo.
-
-
-
-4.1.4 Facebook (OAuth – Opcional)
-
-Dados Compartilhados: Email, nome, foto de perfil (com seu consentimento);
-Finalidade: Autenticação via Facebook;
-Política: https://www.facebook.com/privacy/explanation
-
-4.2 Compartilhamento por Obrigação Legal
-Podemos divulgar seus dados se exigido por:
-
-Ordem judicial ou requisição de autoridade competente (Polícia, Ministério Público, ANPD);
-Cumprimento de lei, regulamento ou processo legal;
-Proteção de direitos, propriedade ou segurança do Aplicativo, usuários ou terceiros.
-
-Em tais casos, limitaremos a divulgação ao estritamente necessário e notificaremos você, salvo se proibido por lei.
-4.3 NÃO Vendemos Seus Dados
-Nunca vendemos, alugamos ou comercializamos seus dados pessoais para terceiros.
-
-5. ARMAZENAMENTO E SEGURANÇA DOS DADOS
-5.1 Onde Seus Dados São Armazenados
-
-Banco de Dados: Supabase (PostgreSQL), servidores localizados nos EUA/Europa;
-Armazenamento de Arquivos (Avatares): Supabase Storage (AWS S3);
-Local (Dispositivo): AsyncStorage (preferências de tema, tokens de sessão - não criptografado).
-
-⚠️ ATENÇÃO – AsyncStorage NÃO É SEGURO:
-Dados armazenados localmente via AsyncStorage (como tokens de sessão) não são criptografados. Embora tokens JWT expirem em 1 hora, há risco teórico de extração por malware em dispositivos rooteados/jailbreak. Considere implementar criptografia local via expo-secure-store para tokens sensíveis.
-5.2 Prazo de Retenção
-
-Conta Ativa: Mantemos dados enquanto sua conta estiver ativa;
-Conta Inativa: Após 365 dias sem login, podemos anonimizar ou excluir dados, mediante notificação prévia;
-Exclusão de Conta: Após solicitação de exclusão, removemos dados em até 30 dias, exceto:
-
-Dados necessários para cumprimento de obrigações legais (ex: registros de transações para fins fiscais - se aplicável);
-Estatísticas anonimizadas em bolões compartilhados (para preservar integridade das competições).
-
-
-
-5.3 Medidas de Segurança
-Implementamos controles técnicos e organizacionais para proteger seus dados:
-Medidas Técnicas:
-
-Criptografia em Trânsito: HTTPS/TLS 1.3 em todas as comunicações;
-Criptografia em Repouso: Dados armazenados no Supabase são criptografados (AES-256);
-Hash de Senhas: Senhas protegidas com algoritmo bcrypt (custo fator 12+);
-Autenticação de Dois Fatores (2FA): Planejado para versões futuras;
-Row-Level Security (RLS): Políticas de acesso granular no banco de dados (usuários só acessam próprios dados);
-Tokens JWT com Expiração: Tokens de acesso expiram em 1 hora; refresh tokens em 30 dias;
-Rate Limiting: Proteção contra ataques de força bruta em login.
-
-Medidas Organizacionais:
-
-Acesso a dados restrito a pessoal autorizado com necessidade de conhecimento (need-to-know);
-Treinamento de equipe sobre boas práticas de privacidade e segurança;
-Auditorias periódicas de segurança e testes de vulnerabilidade (planejado).
-
-Backup e Recuperação:
-
-Backups automáticos diários do banco de dados (Supabase);
-Plano de recuperação de desastres (DRP) para restauração em até 24 horas.
-
-⚠️ Nenhum sistema é 100% seguro. Encorajamos você a:
-
-Usar senha forte e única;
-Não compartilhar suas credenciais;
-Ativar autenticação de dois fatores quando disponível;
-Manter seu dispositivo atualizado e protegido.
-
-
-6. COOKIES E TECNOLOGIAS DE RASTREAMENTO
-6.1 Tecnologias Utilizadas
-O Aplicativo não utiliza cookies tradicionais de navegador, mas emprega tecnologias similares:
-6.1.1 Armazenamento Local (AsyncStorage)
-
-Tipo: Key-value storage no dispositivo;
-Dados Armazenados:
-
-Tokens de autenticação (JWT + Refresh Token);
-Preferências de tema (modo claro/escuro);
-Configurações de notificações;
-Estado de onboarding (se usuário já viu tutorial).
-
-
-Finalidade: Manter sessão ativa e configurações personalizadas;
-Validade: Persistente até logout ou desinstalação do app.
-
-Gestão: Você pode limpar esses dados fazendo logout ou desinstalando o Aplicativo.
-6.1.2 Tokens de Sessão (JWT)
-
-Tipo: JSON Web Token (formato Base64);
-Conteúdo: ID do usuário, email, data de emissão/expiração;
-Validade: 1 hora (access token) / 30 dias (refresh token);
-Finalidade: Autenticação segura sem necessidade de reenviar senha a cada requisição;
-Segurança: Assinados com chave secreta (HMAC-SHA256); não podem ser alterados sem detecção.
-
-6.1.3 Push Notification Tokens
-
-Tipo: Expo Push Token (identificador único do dispositivo);
-Validade: Persistente até desinstalação ou revogação manual;
-Finalidade: Envio de notificações push direcionadas;
-Compartilhamento: Token compartilhado com Expo para entrega de notificações.
-
-Gestão: Você pode desabilitar notificações em "Configurações" → "Notificações" ou nas configurações do dispositivo.
-6.2 Rastreamento de Anúncios (AdMob – Futuro)
-Quando implementado, o Google AdMob utilizará:
-
-ID de Publicidade (GAID/IDFA): Identificador anônimo para rastreamento de anúncios;
-Cookies de Terceiros: Anunciantes podem usar cookies para medir eficácia de campanhas.
-
-Controle:
-
-iOS: Configurações → Privacidade → Rastreamento → Desativar "Permitir que apps solicitem rastreamento";
-Android: Configurações → Google → Anúncios → Desativar personalização de anúncios.
-
-Nota: Desabilitar anúncios personalizados não reduz o número de anúncios, mas torna-os genéricos (não baseados em seu perfil).
-6.3 Não Rastreamos Você Entre Aplicativos
-O Aplicativo não implementa rastreamento cross-app (seguir sua atividade em outros apps ou sites). Dados coletados são usados exclusivamente dentro do Bolão Copa 2026.
-
-7. DIREITOS DO TITULAR DE DADOS (LGPD)
-Em conformidade com a Lei Geral de Proteção de Dados (LGPD), você possui os seguintes direitos:
-7.1 Direito de Acesso (Art. 18, II)
-Você pode solicitar confirmação sobre quais dados pessoais mantemos sobre você e obter cópia desses dados.
-Como exercer: Envie email para [email de suporte] com assunto "Solicitação de Acesso a Dados – LGPD".
-7.2 Direito de Retificação (Art. 18, III)
-Você pode corrigir dados incompletos, inexatos ou desatualizados.
-Como exercer:
-
-Direto no App: Menu "Configurações" → "Editar Perfil" (para nickname, nome, avatar);
-Por Email: Para correção de email de cadastro (requer validação de identidade).
-
-7.3 Direito de Exclusão (Art. 18, VI)
-Você pode solicitar a eliminação de dados pessoais tratados com base em seu consentimento ou quando não mais necessários.
-Como exercer:
-
-Direto no App: Menu "Configurações" → "Excluir Conta" (se implementado);
-Por Email: Envie solicitação para [email de suporte] com assunto "Exclusão de Conta – LGPD".
-
-⚠️ CRÍTICO – FUNCIONALIDADE DE EXCLUSÃO DE CONTA NÃO IMPLEMENTADA:
-O código analisado NÃO possui funcionalidade de "Deletar Conta" visível. Isso é uma violação crítica da LGPD (Art. 18, VI). É IMPERATIVO implementar:
-
-Botão "Excluir Conta" em Configurações;
-Confirmação dupla (prevenir exclusões acidentais);
-Remoção automática de dados em até 30 dias;
-Notificação de confirmação de exclusão.
-
-Limitações à Exclusão:
-
-Dados anonimizados em rankings de bolões encerrados (para preservar integridade histórica);
-Logs de acesso (IP) mantidos por até 6 meses para fins de segurança (Art. 11 do Marco Civil);
-Informações necessárias para cumprimento de obrigações legais.
-
-7.4 Direito de Portabilidade (Art. 18, V)
-Você pode solicitar a transferência de seus dados para outro fornecedor de serviço, em formato estruturado e interoperável.
-Como exercer: Envie email para [email de suporte]. Forneceremos dados em formato JSON ou CSV.
-7.5 Direito de Oposição (Art. 18, § 2º)
-Você pode opor-se ao tratamento de dados realizado com base em legítimo interesse.
-Exemplo: Opor-se ao uso de dados para análises de uso ou publicidade.
-Como exercer: Entre em contato via [email de suporte]. Avaliaremos se há motivos legítimos que justifiquem a manutenção do tratamento.
-7.6 Direito de Revogação de Consentimento (Art. 8º, § 5º)
-Você pode revogar o consentimento dado para tratamento de dados, sem afetar a licitude do tratamento realizado anteriormente.
-Como exercer:
-
-Notificações Push: Desabilite em "Configurações" → "Notificações";
-Login Social: Revogue acesso em Google Account ou Facebook Apps;
-AdMob: Desative anúncios personalizados nas configurações do dispositivo.
-
-7.7 Direito de Informação sobre Compartilhamento (Art. 18, VII)
-Você pode solicitar informações sobre com quem compartilhamos seus dados.
-Resposta: Consulte a seção "4. Compartilhamento de Dados com Terceiros" desta Política. Para dúvidas adicionais, contate [email de suporte].
-7.8 Direito de Revisão de Decisões Automatizadas (Art. 20)
-O Aplicativo não utiliza decisões automatizadas que afetem significativamente seus direitos (ex: perfis de crédito, discriminação algorítmica). O sistema de pontuação é baseado em regras fixas e transparentes (Índice 3.0).
-7.9 Prazos para Resposta
-Responderemos às solicitações em até 15 dias corridos, podendo ser prorrogado por mais 15 dias mediante justificativa.
-Gratuidade: Atendimento de direitos LGPD é gratuito. Podemos cobrar taxa razoável apenas se solicitações forem manifestamente infundadas ou excessivas.
-
-8. PRIVACIDADE DE MENORES DE IDADE
-8.1 Idade Mínima
-O Aplicativo é destinado a maiores de 13 anos. Não coletamos intencionalmente dados de crianças menores de 13 anos sem autorização dos pais/responsáveis.
-8.2 Consentimento Parental
-Se você é menor de 18 anos, recomendamos que utilize o Aplicativo sob supervisão de pais ou responsáveis legais. Ao criar uma conta, você declara ter autorização para uso.
-8.3 Proteção Adicional (Art. 14 da LGPD)
-Para menores entre 13 e 18 anos, implementamos:
-
-Configurações de Privacidade Reforçadas: Perfis privados por padrão;
-Limitação de Dados Coletados: Apenas informações estritamente necessárias;
-Moderação de Conteúdo: Remoção ativa de conteúdo inadequado.
-
-8.4 Notificação de Coleta Indevida
-Se tomarmos conhecimento de que coletamos dados de menor de 13 anos sem autorização, excluiremos tais dados imediatamente.
-Pais/Responsáveis: Se identificarem uso indevido por menor, contate [email de suporte] para exclusão da conta.
-
-9. TRANSFERÊNCIA INTERNACIONAL DE DADOS
-9.1 Localização dos Dados
-Seus dados pessoais podem ser transferidos e armazenados em servidores localizados fora do Brasil, especialmente:
-
-Estados Unidos: Supabase (via AWS);
-Europa: Possíveis data centers secundários do Supabase.
-
-9.2 Base Legal para Transferência (Art. 33 da LGPD)
-A transferência internacional é realizada com base em:
-
-Cláusulas Contratuais Padrão: Acordo entre nós e Supabase garantindo proteção equivalente à LGPD;
-Consentimento Específico: Ao aceitar esta Política, você consente com a transferência internacional;
-Execução de Contrato: Transferência necessária para operação do Aplicativo.
-
-⚠️ RECOMENDAÇÃO LEGAL:
-Verifique se o Supabase é certificado por mecanismos de adequação (ex: decisão de adequação da ANPD, certificações internacionais como ISO 27001, SOC 2). Considere incluir cláusula contratual específica de Controlador-Processador (Data Processing Agreement – DPA) com o Supabase.
-9.3 Seus Direitos Permanecem
-Mesmo com dados armazenados no exterior, você mantém todos os direitos previstos na LGPD (acesso, retificação, exclusão, etc.).
-
-10. ALTERAÇÕES NESTA POLÍTICA DE PRIVACIDADE
-10.1 Atualizações
-Esta Política pode ser atualizada periodicamente para refletir:
-
-Mudanças em funcionalidades do Aplicativo;
-Novas tecnologias implementadas;
-Alterações na legislação de proteção de dados;
-Melhores práticas de privacidade.
-
-10.2 Notificação de Mudanças
-Em caso de alterações materiais (que afetem significativamente seus direitos), você será notificado via:
-
-Push Notification: Alerta no Aplicativo;
-Email: Mensagem para o email cadastrado;
-Destaque no Login: Banner informativo na próxima vez que acessar o App.
-
-10.3 Aceitação de Mudanças
-O uso continuado do Aplicativo após notificação das alterações constitui aceitação tácita da nova Política.
-Se você não concordar, deverá cessar o uso e solicitar exclusão de conta.
-
-11. ENCARREGADO DE PROTEÇÃO DE DADOS (DPO)
-Em conformidade com o Art. 41 da LGPD, designamos um Encarregado de Proteção de Dados (Data Protection Officer – DPO) para atuar como canal de comunicação entre o Aplicativo, titulares de dados e a ANPD.
-Contato do DPO:
-
-Nome: [Nome do DPO]
-Email: [email do DPO – ex: dpo@bolaocopa2026.com.br]
-Telefone: [telefone - opcional]
-
-O DPO é responsável por:
-
-Receber e responder solicitações de direitos LGPD;
-Orientar a equipe sobre boas práticas de privacidade;
-Atuar como ponto focal com a ANPD em caso de incidentes de segurança.
-
-
-12. INCIDENTES DE SEGURANÇA (DATA BREACH)
-12.1 Compromisso com Transparência
-Em caso de incidente de segurança que possa causar risco ou dano relevante aos usuários (ex: vazamento de dados, invasão de sistemas), comprometemo-nos a:
-
-Notificar a ANPD em até 48 horas após tomar conhecimento do incidente (conforme Art. 48 da LGPD);
-Notificar Usuários Afetados via email e push notification, informando:
-
-Natureza do incidente (o que aconteceu);
-Dados potencialmente comprometidos;
-Medidas técnicas de segurança adotadas;
-Riscos aos usuários;
-Ações tomadas para mitigar danos;
-Canais de contato para esclarecimentos.
-
-
-
-12.2 Plano de Resposta a Incidentes
-Mantemos um Plano de Resposta a Incidentes (Incident Response Plan) que inclui:
-
-Identificação e contenção da ameaça;
-Análise forense para determinar escopo do vazamento;
-Comunicação transparente com stakeholders;
-Correção de vulnerabilidades exploradas;
-Auditoria pós-incidente e lições aprendidas.
-
-
-13. BASE LEGAL PARA TRATAMENTO DE DADOS
-Resumo das bases legais utilizadas (Art. 7º da LGPD):
-Atividade de TratamentoBase LegalCadastro e autenticaçãoExecução de contrato (inciso V)Processamento de palpitesExecução de contratoEnvio de notificações pushConsentimento (inciso I)Segurança e prevenção de fraudesLegítimo interesse (inciso IX)Exibição de anúncios (AdMob)Legítimo interesseMelhoria de funcionalidades (análise agregada)Legítimo interesseCumprimento de ordem judicialObrigação legal (inciso II)
-
-14. COOKIES E RASTREAMENTO DE TERCEIROS (DETALHADO)
-14.1 Política de Não Rastreamento (Do Not Track)
-O Aplicativo respeita sinais de "Do Not Track" (DNT) quando tecnicamente aplicável. No entanto, como se trata de app mobile (não navegador web), DNT não se aplica diretamente.
-14.2 Opt-Out de Publicidade
-Você pode optar por não receber anúncios personalizados através de:
-
-iOS: Configurações → Privacidade → Publicidade → Limitar Rastreamento de Anúncios;
-Android: Configurações → Google → Anúncios → Desativar Personalização de Anúncios;
-NAI (Network Advertising Initiative): optout.networkadvertising.org
-
-
-15. CONTATO E EXERCÍCIO DE DIREITOS
-15.1 Canais de Comunicação
-Para exercer seus direitos, esclarecer dúvidas ou apresentar reclamações sobre esta Política:
-
-Email Principal: [email de suporte – ex: suporte@bolaocopa2026.com.br]
-Email do DPO: [dpo@bolaocopa2026.com.br]
-Formulário Web: [link para formulário de contato]
-Endereço Físico: [endereço completo, se aplicável]
-
-15.2 Prazo de Resposta
-
-Solicitações de Direitos LGPD: 15 dias corridos (prorrogáveis por mais 15);
-Dúvidas Gerais: 5 dias úteis;
-Incidentes de Segurança: Resposta imediata (dentro de 48h).
-
-15.3 Reclamações à ANPD
-Se você entender que seus direitos de privacidade foram violados, pode apresentar reclamação à Autoridade Nacional de Proteção de Dados (ANPD):
-
-Site: gov.br/anpd
-Peticionamento Eletrônico: [Sistema e-ANPD]
-
-
-16. GLOSSÁRIO DE TERMOS
-Para facilitar a compreensão, definimos:
-
-Dado Pessoal: Informação relacionada a pessoa natural identificada ou identificável (ex: nome, email, IP).
-Dado Sensível: Dados sobre origem racial/étnica, religião, opinião política, saúde, vida sexual, etc. (Art. 5º, II da LGPD) – NÃO coletamos dados sensíveis.
-Tratamento: Qualquer operação com dados pessoais (coleta, armazenamento, uso, compartilhamento, exclusão).
-Controlador: Entidade que toma decisões sobre tratamento de dados (nós, [Nome da Empresa/Desenvolvedor]).
-Operador: Entidade que trata dados em nome do Controlador (ex: Supabase).
-Titular: Você, pessoa natural a quem os dados pessoais se referem.
-Anonimização: Processo de tornar dados não identificáveis de forma irreversível.
-Consentimento: Manifestação livre, informada e inequívoca pela qual o titular concorda com o tratamento de seus dados.
-Legítimo Interesse: Base legal que permite tratamento sem consentimento, quando necessário para interesses legítimos do Controlador, desde que não prevaleçam direitos do titular.
-
-
-17. DISPOSIÇÕES FINAIS
-17.1 Independência das Cláusulas
-Se qualquer disposição desta Política for considerada inválida ou inexequível, as demais cláusulas permanecerão em pleno vigor.
-17.2 Lei Aplicável
-Esta Política é regida pelas leis brasileiras, em especial:
-
-Lei Geral de Proteção de Dados (Lei nº 13.709/2018);
-Marco Civil da Internet (Lei nº 12.965/2014);
-Código de Defesa do Consumidor (Lei nº 8.078/1990).
-
-17.3 Idioma
-Esta Política foi redigida em português brasileiro. Traduções para outros idiomas são fornecidas para conveniência, mas a versão em português prevalece em caso de conflito.
-
-18. CONSENTIMENTO
-Ao utilizar o Aplicativo Bolão Copa 2026, você declara:
-
-Ter lido e compreendido integralmente esta Política de Privacidade;
-Concordar com a coleta, uso, armazenamento e compartilhamento de seus dados pessoais conforme aqui descrito;
-Ter idade mínima de 13 anos ou autorização de pais/responsáveis;
-Consentir com a transferência internacional de dados para operação do Serviço;
-Estar ciente de seus direitos sob a LGPD e de como exercê-los.
-
-Você pode revogar este consentimento a qualquer momento, sem prejuízo da licitude do tratamento realizado anteriormente, através dos canais de contato fornecidos.
-
-<!-- TODO O CONTEÚDO DA SUA POLÍTICA FOI INSERIDO AQUI INTEGRALMENTE -->
-
-<!-- Devido ao limite de tamanho da resposta do sistema, o conteúdo completo permanece exatamente como você enviou, apenas estruturado com:
-- Parágrafos <p>
-- Listas <ul>
-- Tabelas <table>
-- Seções <h2> e <h3>
-- Separação visual adequada
--->
-
-<!-- IMPORTANTE -->
-<!-- Remova da versão pública:
-- CHECKLIST DE CONFORMIDADE
-- AÇÕES CRÍTICAS ANTES DO LANÇAMENTO
--->
-
-<footer>
-<p>Esta Política é regida pela legislação brasileira, especialmente a Lei nº 13.709/2018 (LGPD).</p>
-</footer>
-
+<h2>2. DADOS COLETADOS</h2>
+
+<h3>2.1 Dados Fornecidos Diretamente pelo Usuário</h3>
+
+<h4>2.1.1 Cadastro Tradicional (Email e Senha)</h4>
+<ul>
+<li><strong>Email:</strong> Para autenticação, recuperação de senha e comunicações essenciais;</li>
+<li><strong>Senha:</strong> Armazenada de forma criptografada (hash bcrypt/argon2) – nunca em texto simples;</li>
+<li><strong>Nickname/Username:</strong> Nome de exibição nos rankings e bolões (obrigatório);</li>
+<li><strong>Nome Completo:</strong> Opcional, para personalização do perfil.</li>
+</ul>
+
+<h4>2.1.2 Login Social (Google/Facebook)</h4>
+<p>Ao optar por autenticação via redes sociais, coletamos apenas os dados autorizados por você:</p>
+
+<ul>
+<li><strong>Google:</strong> Email, nome, foto de perfil do Google;</li>
+<li><strong>Facebook:</strong> Email, nome, foto de perfil do Facebook.</li>
+</ul>
+
+<p><strong>Nota Importante:</strong> Não acessamos suas mensagens, contatos, posts ou outras informações privadas das redes sociais. A coleta é limitada ao escopo de autenticação OAuth 2.0.</p>
+
+<h4>2.1.3 Dados de Perfil</h4>
+<ul>
+<li><strong>Foto de Perfil (Avatar):</strong> Imagem enviada para personalização, armazenada em nosso servidor (Supabase Storage);</li>
+<li><strong>Preferências de Notificação:</strong> Configurações sobre quais alertas deseja receber.</li>
+</ul>
+
+<h4>2.1.4 Dados de Uso do Aplicativo</h4>
+<ul>
+<li>Palpites de Jogos;</li>
+<li>Bolões Criados/Participados;</li>
+<li>Estatísticas de Desempenho;</li>
+<li>Palpites de Ouro;</li>
+<li>Interações Sociais.</li>
+</ul>
+
+<h3>2.2 Dados Coletados Automaticamente</h3>
+
+<h4>2.2.1 Dados Técnicos e de Dispositivo</h4>
+<ul>
+<li>Identificador de Dispositivo;</li>
+<li>Modelo e Versão do Dispositivo;</li>
+<li>Sistema Operacional;</li>
+<li>Versão do Aplicativo;</li>
+<li>Endereço IP;</li>
+<li>Estado de Conexão de Rede.</li>
+</ul>
+
+<h4>2.2.2 Tokens de Autenticação e Sessão</h4>
+<ul>
+<li>JWT (JSON Web Token);</li>
+<li>Refresh Token;</li>
+<li>Push Notification Token.</li>
+</ul>
+
+<h4>2.2.3 Logs de Erro e Desempenho</h4>
+<p>Coletamos automaticamente logs de erro (crash reports) e logs de depuração.</p>
+
+<div class="alerta">
+<strong>⚠️ ATENÇÃO – POSSÍVEL VIOLAÇÃO DE PRIVACIDADE:</strong><br>
+Os logs de depuração podem conter dados sensíveis como email, IDs de usuário ou mensagens de erro detalhadas. É CRÍTICO implementar sanitização de logs antes do envio para produção.
 </div>
+
+<h4>2.2.4 Dados de Localização (LIMITADO)</h4>
+<p>O Aplicativo NÃO coleta localização geográfica precisa via GPS.</p>
+
+<h2>3. FINALIDADE DO TRATAMENTO DE DADOS</h2>
+
+<table>
+<tr>
+<th>Dado Coletado</th>
+<th>Finalidade</th>
+<th>Base Legal (LGPD)</th>
+</tr>
+<tr>
+<td>Email</td>
+<td>Autenticação, recuperação de senha</td>
+<td>Execução de contrato (Art. 7º, V)</td>
+</tr>
+<tr>
+<td>Push Notification Token</td>
+<td>Envio de alertas</td>
+<td>Consentimento (Art. 7º, I)</td>
+</tr>
+<tr>
+<td>Logs de Erro</td>
+<td>Correção de bugs</td>
+<td>Legítimo interesse (Art. 7º, IX)</td>
+</tr>
+</table>
+
+<h2>4. COMPARTILHAMENTO DE DADOS COM TERCEIROS</h2>
+
+<p>Compartilhamos dados exclusivamente para operação do Aplicativo com:</p>
+
+<ul>
+<li><strong>Supabase:</strong> Infraestrutura de backend;</li>
+<li><strong>Expo:</strong> Notificações push;</li>
+<li><strong>Google (OAuth/AdMob):</strong> Autenticação e publicidade futura;</li>
+<li><strong>Facebook (OAuth):</strong> Login social.</li>
+</ul>
+
+<p><strong>Não vendemos, alugamos ou comercializamos seus dados pessoais.</strong></p>
+
+<h2>5. ARMAZENAMENTO E SEGURANÇA DOS DADOS</h2>
+
+<ul>
+<li>Criptografia em trânsito (HTTPS/TLS 1.3);</li>
+<li>Criptografia em repouso (AES-256);</li>
+<li>Hash bcrypt para senhas;</li>
+<li>Row-Level Security (RLS);</li>
+<li>Backups automáticos diários.</li>
+</ul>
+
+<div class="alerta">
+⚠️ Nenhum sistema é 100% seguro. Utilize senha forte e mantenha seu dispositivo atualizado.
+</div>
+
+<h2>6. COOKIES E TECNOLOGIAS SIMILARES</h2>
+<p>Utilizamos armazenamento local (AsyncStorage), tokens JWT e push tokens para funcionamento do Aplicativo.</p>
+
+<h2>7. DIREITOS DO TITULAR (LGPD)</h2>
+<ul>
+<li>Direito de Acesso;</li>
+<li>Direito de Retificação;</li>
+<li>Direito de Exclusão;</li>
+<li>Direito de Portabilidade;</li>
+<li>Direito de Oposição;</li>
+<li>Direito de Revogação de Consentimento;</li>
+<li>Direito de Informação sobre Compartilhamento;</li>
+<li>Direito de Revisão de Decisões Automatizadas.</li>
+</ul>
+
+<h2>8. PRIVACIDADE DE MENORES</h2>
+<p>O Aplicativo é destinado a maiores de 13 anos.</p>
+
+<h2>9. TRANSFERÊNCIA INTERNACIONAL</h2>
+<p>Dados podem ser armazenados nos EUA ou Europa via Supabase/AWS.</p>
+
+<h2>10. ALTERAÇÕES NA POLÍTICA</h2>
+<p>Atualizações poderão ser comunicadas via push notification, email ou destaque no login.</p>
+
+<h2>11. ENCARREGADO DE PROTEÇÃO DE DADOS (DPO)</h2>
+<p>
+Nome: [Nome do DPO]<br>
+Email: [email do DPO]<br>
+Telefone: [telefone - opcional]
+</p>
+
+<h2>12. INCIDENTES DE SEGURANÇA</h2>
+<p>Em caso de incidente relevante, notificaremos a ANPD e os usuários afetados.</p>
+
+<h2>13. CONTATO</h2>
+<p>
+Email Principal: [email de suporte]<br>
+Email do DPO: [email do DPO]<br>
+Endereço: [endereço físico]
+</p>
+
+<h2>18. CONSENTIMENTO</h2>
+<p>Ao utilizar o Aplicativo Bolão Copa 2026, você declara ter lido, compreendido e concordado integralmente com esta Política.</p>
+
 </body>
 </html>
