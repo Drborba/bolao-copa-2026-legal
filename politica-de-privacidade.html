@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Termos de Uso - CRAVA</title>
+<title>Política de Privacidade - CRAVA</title>
 
 <style>
     body{
@@ -82,57 +82,85 @@
 
 <body>
 
-<h1>TERMOS DE USO</h1>
+<h1>POLÍTICA DE PRIVACIDADE</h1>
 
 <p class="meta">
 Data de Vigência: 04 de maio de 2026<br>
 Última Atualização: 04 de maio de 2026
 </p>
 
-<h2>1. ACEITAÇÃO DOS TERMOS</h2>
-<p>Ao utilizar o aplicativo CRAVA, você concorda integralmente com estes Termos de Uso e com nossa Política de Privacidade. Este serviço é operado por <strong>DRB Software</strong>, inscrito no CNPJ <strong>66.570.103/0001-03</strong>, com sede na <strong>Rua José Ferreira Rocha, 112, Felicia, Vitória da Conquista - BA</strong>.</p>
+<h2>1. INTRODUÇÃO E COMPROMISSO COM A PRIVACIDADE</h2>
+<p>A presente Política de Privacidade descreve como <strong>DRB Software</strong>, inscrito no CNPJ <strong>66.570.103/0001-03</strong>, sediado na <strong>Rua José Ferreira Rocha, 112, Felicia, Vitória da Conquista - BA</strong>, coleta, usa, armazena e protege os dados pessoais dos usuários do aplicativo CRAVA.</p>
 
-<h2>2. DESCRIÇÃO DO SERVIÇO E PLANO PRO</h2>
-<p>O Aplicativo é uma plataforma de entretenimento para palpites esportivos (bolão).</p>
+<p>Nosso compromisso é garantir transparência e segurança em conformidade com a <strong>Lei Geral de Proteção de Dados (LGPD – Lei nº 13.709/2018)</strong> e o <strong>Marco Civil da Internet</strong>.</p>
 
-<p><strong>Funcionalidades:</strong> Criação de bolões, sistema de pontuação "Índice 3.0", rankings e notificações.</p>
+<h2>2. DADOS COLETADOS</h2>
 
-<p><strong>Plano Pro (Assinatura):</strong> O Aplicativo oferece uma modalidade paga ("Plano Pro") no valor de <strong>R$ 9,99</strong>, processada via RevenueCat através das lojas oficiais (Apple App Store e Google Play Store).</p>
+<h3>2.1 Dados Fornecidos Diretamente</h3>
+<p><strong>Autenticação:</strong> E-mail, nickname e senha (armazenada via hash criptográfico).</p>
+<p><strong>Login Social:</strong> E-mail, nome e foto de perfil autorizados via Google ou Facebook através de protocolo OAuth 2.0.</p>
+<p><strong>Perfil e Uso:</strong> Fotos de avatar enviadas para o Supabase Storage, palpites de jogos, estatísticas de desempenho e participações em bolões.</p>
 
-<p><strong>Gestão de Pagamentos:</strong> As assinaturas, cobranças, cancelamentos e pedidos de reembolso são gerenciados exclusivamente pelas lojas de aplicativos de acordo com suas respectivas políticas.</p>
+<h3>2.2 Dados Coletados Automaticamente</h3>
+<p><strong>Técnicos:</strong> Identificador do dispositivo, modelo, sistema operacional, versão do app e endereço IP.</p>
+<p><strong>Sessão:</strong> Tokens JWT (JSON Web Token), Refresh Tokens e Push Notification Tokens.</p>
+<p><strong>Logs:</strong> Relatórios de erro e desempenho para correção de bugs.</p>
 
-<h2>3. NATUREZA DO SERVIÇO E VEDAÇÃO DE APOSTAS</h2>
-<p>O Aplicativo possui finalidade <strong>estritamente recreativa</strong>.</p>
+<h2>3. FINALIDADE DO TRATAMENTO E BASE LEGAL</h2>
+
+<table>
+<tr>
+<th>Dado Coletado</th>
+<th>Finalidade</th>
+<th>Base Legal (LGPD)</th>
+</tr>
+<tr>
+<td>E-mail</td>
+<td>Autenticação e recuperação de conta</td>
+<td>Execução de Contrato</td>
+</tr>
+<tr>
+<td>Dados de Palpites</td>
+<td>Operação das funcionalidades do bolão</td>
+<td>Execução de Contrato</td>
+</tr>
+<tr>
+<td>Push Token</td>
+<td>Envio de alertas e notificações</td>
+<td>Consentimento</td>
+</tr>
+<tr>
+<td>Logs de Erro</td>
+<td>Manutenção e melhoria técnica</td>
+<td>Legítimo Interesse</td>
+</tr>
+</table>
+
+<h2>4. COMPARTILHAMENTO COM TERCEIROS</h2>
+<p>Compartilhamos dados estritamente necessários para a operação com:</p>
 
 <ul>
-<li>Não realizamos apostas com dinheiro real;</li>
-<li>Não há transferência de valores monetários entre usuários ou premiações em dinheiro pagas pelo Aplicativo;</li>
-<li>Qualquer premiação externa organizada por criadores de bolões privados é de inteira responsabilidade de seus organizadores.</li>
+<li><strong>Supabase:</strong> Infraestrutura de banco de dados e autenticação;</li>
+<li><strong>RevenueCat:</strong> Gestão de assinaturas e compras In-App;</li>
+<li><strong>Google (AdMob/OAuth):</strong> Autenticação e serviços de publicidade;</li>
+<li><strong>Facebook:</strong> Autenticação via login social.</li>
 </ul>
 
-<h2>4. CADASTRO E PRIVACIDADE</h2>
-<p><strong>Elegibilidade:</strong> O uso é destinado a maiores de 13 anos.</p>
+<h2>5. SEGURANÇA E ARMAZENAMENTO</h2>
+<p><strong>Proteção:</strong> Criptografia em trânsito (HTTPS/TLS 1.3) e em repouso (AES-256).</p>
+<p><strong>Integridade:</strong> Implementação de Row-Level Security (RLS) no Supabase para garantir que usuários acessem apenas seus próprios dados.</p>
+<p><strong>Localização:</strong> Os dados podem ser armazenados em servidores nos EUA ou Europa via Supabase/AWS.</p>
 
-<p><strong>Segurança:</strong> A autenticação é realizada via e-mail ou login social (Google/Facebook), com dados armazenados de forma segura via Supabase.</p>
+<h2>6. DIREITOS DO TITULAR (LGPD)</h2>
+<p>Você possui o direito de solicitar o acesso, retificação, exclusão ou portabilidade de seus dados a qualquer momento. A exclusão da conta pode ser realizada diretamente nas configurações do Aplicativo.</p>
 
-<p><strong>Responsabilidade:</strong> O Usuário é responsável pela veracidade dos dados e pela segurança de sua conta.</p>
+<h2>7. PRIVACIDADE DE MENORES E CONTATO</h2>
+<p><strong>Idade Mínima:</strong> O Aplicativo é destinado a maiores de 13 anos.</p>
+<p><strong>DPO (Encarregado):</strong> Diego Ramos Borba.</p>
+<p><strong>Suporte:</strong>drbsoftware2026@yahoo.com.</p>
 
-<h2>5. REGRAS DE CONDUTA E PROPRIEDADE INTELECTUAL</h2>
-<p><strong>Proibições:</strong> É proibida a engenharia reversa, exploração de vulnerabilidades, manipulação de rankings ou uso de conteúdo ofensivo.</p>
-
-<p><strong>Direitos:</strong> Todos os direitos de propriedade intelectual sobre o software, marca e design pertencem à DRB Software.</p>
-
-<h2>6. LIMITAÇÃO DE RESPONSABILIDADE</h2>
-<p>O serviço é fornecido "como está". A DRB Software não garante que o Aplicativo estará disponível ininterruptamente ou livre de erros, eximindo-se de responsabilidade por falhas técnicas de terceiros (como provedores de internet ou servidores de resultados).</p>
-
-<h2>7. RESCISÃO E MODIFICAÇÕES</h2>
-<p>Reservamo-nos o direito de atualizar estes Termos a qualquer momento. O uso continuado do App após alterações constitui aceitação dos novos termos. O usuário pode excluir sua conta e dados a qualquer momento diretamente nas configurações do aplicativo.</p>
-
-<h2>8. LEI APLICÁVEL E FORO</h2>
-<p>Estes Termos são regidos pelas leis da República Federativa do Brasil. Fica eleito o foro da comarca de Vitória da Conquista, Bahia, para dirimir quaisquer questões oriundas deste documento.</p>
-
-<h2>9. CONTATO</h2>
-<p>Para suporte ou dúvidas legais, entre em contato através do e-mail: <strong>drbsoftware2026@yahoo.com</strong>.</p>
+<h2>8. CONSENTIMENTO</h2>
+<p>Ao utilizar o Aplicativo Bolão Copa 2026, você declara ter lido e concordado com esta Política.</p>
 
 </body>
 </html>
